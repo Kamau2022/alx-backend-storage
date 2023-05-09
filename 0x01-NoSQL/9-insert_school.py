@@ -8,5 +8,4 @@ def insert_school(mongo_collection, **kwargs):
        in a collection based on kwargs
     """
     newlist = [{**kwargs}]
-    insert_new = mongo_collection.insert_many(newlist)
-    return insert_new.inserted_ids
+    mongo_collection.insert_many(newlist)
