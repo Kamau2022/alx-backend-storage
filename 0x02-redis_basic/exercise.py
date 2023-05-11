@@ -3,6 +3,7 @@
 """
 import uuid
 import redis
+import typing
 
 
 class Cache:
