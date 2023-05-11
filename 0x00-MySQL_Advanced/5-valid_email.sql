@@ -3,4 +3,4 @@ CREATE TRIGGER email_trigger
 before UPDATE
 ON users
 FOR EACH ROW
-SET new.email = new.valid_email;
+SET new.valid_email = new.email;
